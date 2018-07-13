@@ -7,7 +7,7 @@ node{
         stage('Analyse') {
             steps {
                    sudo chmod -R ug+w
-                   sh "${gradleHome}/bin/gradle sonarqube -Dsonar.host.url=${config.sonarHostUrl} -Dsonar.projectName='sonarqube-scanner-gradle' -Dsonar.working.directory=pwd()/build/sonar
+                   sh "${gradleHome}/bin/gradle sonarqube -Dsonar.host.url=${config.sonarHostUrl} -Dsonar.projectName='SonarTest' -Dsonar.working.directory=pwd()/build/sonar
                    sh './gradlew --info sonarqube'
         }
     }
