@@ -2,7 +2,7 @@ node{
 
     stages {
         stage('Checkout') {
-        git 'https://github.com/Ayshalti/sonarqube-scanner-gradle.git'
+        git 'https://github.com/Ayshalti/SonarTest.git'
         }
         stage('Analyse') {
             steps {
